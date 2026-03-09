@@ -480,7 +480,7 @@ const NewMissionScreen=({setScreen,bp})=>{
   );
   return (
     <div style={{flex:1,overflow:"auto",background:T.bg,paddingBottom:bp==="mobile"?72:0}}>
-      <TopBar title="Nouvelle Mission" subtitle="Créer une mission d'audit" bp={bp} actions={<><Btn variant="ghost" onClick={()=>setScreen("missions")} small>Annuler</Btn>{bp!=="mobile"&&<Btn onClick={()=>setScreen("missions")} small>✓ Enregistrer</Btn></>}/>
+      <TopBar title="Nouvelle Mission" subtitle="Créer une mission d'audit" bp={bp} actions={<><Btn variant="ghost" onClick={()=>setScreen("missions")} small>Annuler</Btn>{bp!=="mobile"&&<Btn onClick={()=>setScreen("missions")} small>✓ Enregistrer</Btn></>} />
       <div style={{padding:bp==="mobile"?"12px":"18px 24px",maxWidth:800,margin:"0 auto"}}>
         <Section num="1" title="Informations générales">
           <div style={{marginBottom:12}}><Label required>Titre de la mission</Label><Input placeholder="Ex : Audit Risques Opérationnels"/></div>
